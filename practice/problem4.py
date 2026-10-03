@@ -21,9 +21,9 @@ def essay(correct, student, points):
 
 # Mapping of question type to function
 rates = {
-    "MCQ": lambda args: mcq(args[0], args[1], args[2]),
-    "TF": lambda args: tf(args[0], args[1], args[2]),
-    "ESSAY": lambda args: essay(args[0], args[1], args[2])
+    "MCQ": lambda a,b,c: mcq(a, b, c),
+    "TF": lambda a,b,c: tf(a, b, c),
+    "ESSAY": lambda a,b,c: essay(a, b, c)
 }
 
 def main():
